@@ -1,0 +1,11 @@
+export default [
+    { "_id": "A101", "title": "Propulsion Assignment", "course": "RS101", "available_date": "October 17 at 12:00am", "available_until": "10/26/2024", "due_date": "October 24 at 11:59pm", "points": "100", "description": "This is an assignment for RS101"},
+    { "_id": "A102", "title": "Combustion Analysis", "course": "RS101", "available_date": "October 24 at 12:00am", "available_until": "11/01/2024","due_date": "October 31 at 11:59pm", "points": "100", "description": "This is an assignment for RS101" },
+    { "_id": "A103", "title": "Nozzle Design Project", "course": "RS101", "available_date": "October 31 at 12:00am", "available_until": "11/09/2024","due_date": "November 7 at 11:59pm", "points": "150", "description": "This is an assignment for RS101" },
+    { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102", "available_date": "October 20 at 12:00am", "available_until": "10/29/2024","due_date": "October 27 at 11:59pm", "points": "100", "description": "This is an assignment for RS102" },
+    { "_id": "A202", "title": "Flow Analysis", "course": "RS102", "available_date": "October 27 at 12:00am", "available_until": "11/05/2024","due_date": "November 3 at 11:59pm", "points": "115", "description": "This is an assignment for RS102" },
+    { "_id": "A203", "title": "Heating Analysis", "course": "RS102", "available_date": "November 3 at 12:00am", "available_until": "11/11/2024","due_date": "November 10 at 11:59pm", "points": "115", "description": "This is an assignment for RS102" },
+    { "_id": "A301", "title": "Structural Design Task", "course": "RS103", "available_date": "October 15 at 12:00am", "available_until": "10/24/2024","due_date": "October 22 at 11:59pm", "points": "100", "description": "This is an assignment for RS103" },
+    { "_id": "A302", "title": "Orbital Calculations", "course": "RS103", "available_date": "October 22 at 12:00am", "available_until": "11/01/2024","due_date": "October 29 at 11:59pm", "points": "110", "description": "This is an assignment for RS103" },
+    { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103", "available_date": "November 5 at 12:00am", "available_until": "11/10/2024","due_date": "November 8 at 11:59pm", "points": "200", "description": "This is an assignment for RS103" }
+  ]
