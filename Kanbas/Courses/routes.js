@@ -24,6 +24,22 @@ export default function CourseRoutes(app) {
     res.send(courses);
   });
 
+  app.get("/api/courses/:courseId/assignments", (req, res) => {
+    const { courseId } = req.params; 
+    const assignments = assignmentsDao.findAssignmentsForCourse(courseId);
+    res.json(assignments);
+  });
+
+  app.post("/api/courses/:courseId/assignments", (req, res) => {
+    const { courseId } = req.params;
+    const assignment = {
+      ...req.body,
+      course: courseId,
+    };
+    const newAssignment = assignmentsDao.createAssignment(assignment);
+    res.send(newAssignment);
+  })
+
   app.delete("/api/courses/:courseId", (req, res) => {
     const { courseId } = req.params;
     dao.deleteCourse(courseId);
@@ -37,22 +53,5 @@ export default function CourseRoutes(app) {
     res.sendStatus(204);
   });
   
-  app.get("/api/courses/:courseId/assignments", (req, res) => {
-    const { courseId } = req.params; 
-    const assignments = assignmentsDao.findAssignmentsForCourse(courseId);
-    res.json(assignments);
-  });
-
-  app.post("/api/courses/:courseId/assignments", (req, res) => {
-    const { courseId } = req.params;
-    const assignment = {
-      ...req.body,
-      course: courseId,
-    };
-    const newAssignment = assignmentsDaos.createAssignment(assignment);
-    res.send(newAssignment);
-  })
-
-
-
+ 
 }

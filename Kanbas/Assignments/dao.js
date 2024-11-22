@@ -8,7 +8,7 @@ export function findAssignmentsForCourse(courseId){
 
 export function updateAssignment(assignmentId, assignmentUpdates) {
     const { assignments } = Database;
-    const assignment = assignments.find((assignment) => assignment._id === assignment._id);
+    const assignment = assignments.find((assignment) => assignment._id === assignmentId);
     Object.assign(assignment, assignmentUpdates);
     return assignment;
 }
